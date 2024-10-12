@@ -1,7 +1,52 @@
+/* Global styles */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+    /* Убирает подчеркивание */
+}
+
+ul,ol {
+    list-style-type: none;
+    /* Убирает маркеры для всех списков */
+    padding-left: 0;
+    /* Убирает стандартный отступ */
+}
+
+/* Header styles */
+header {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    /* Равномерное распределение пространства между элементами */
+    align-items: center;
+    /* Выравнивание элементов по вертикали */
+    padding: 20px;
+    /* Отступы сверху и снизу */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -14,14 +59,6 @@ body {
     color: #4d5ae5;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 .studio-class {
     color: #2e2f42;
 }
@@ -29,19 +66,27 @@ ul {
 .nav-menu {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+     gap: 20px;  /* Расстояние между элементами навигации */
+    list-style: none;  /* Убираем маркеры списка */
 }
+
+
+
+
+
 
 .nav-menu:hover,
 .nav-menu:focus {
     color: #404bbf;
 }
 
-.contact-address {
-    font-style: normal;
+.contact-address ul {
+    display: flex;
+    gap: 20px;
 }
 
 .contact-link {
@@ -49,151 +94,380 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-decoration: none;
+     text-decoration: none;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-    color: #404bbf;
+
+    .contact-link:hover,
+    .contact-link:focus {
+        color: #404bbf;
+    }
+
+/* Section styles */
+.section {
+    padding: 120px 0;
+    background-color: #f9f9fb;
 }
 
 .first-section {
     background-color: #2e2f42;
+    color: #ffffff;
+    text-align: center;
+    padding: 160px 0;
 }
-
 
 .main-words {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
+    margin-bottom: 40px;
 }
 
 .order-service {
-    background-color: #4D5AE5;
+    padding: 15px 30px;
+    font-size: 18px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    background-color: #4d5ae5;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.order-service:hover,
-.order-service:focus {
-    background-color: #404BBF;
+.order-service:hover {
+    background-color: #404bbf;
+}
+
+/* Our Services Section */
+.second-section .our-services {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.second-section ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .service-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 24px;
     color: #2e2f42;
+    margin-bottom: 10px;
 }
 
 .service-description {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
+    line-height: 1.5;
 }
 
-.third-section {
-    background-color: #F4F4FD;
-}
-
-.our-team {
+/* Our Team Section
+.third-section .our-team {
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
+    margin-bottom: 60px;
 }
 
 .team-list {
-    list-style-type: none;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .team-item {
-    background-color: #FFFFFF;
     text-align: center;
 }
 
+.team-item img {
+    border-radius: 50%;
+    width: 264px;
+    height: 264px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 .team-member-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #2e2f42;
+    margin-bottom: 10px;
+}
+
+.team-member-role {
+    font-size: 16px;
+    color: #434455;
+} */
+
+
+/* ------------------------- */
+
+/* Our Team Section */
+/* Our Team */
+
+/* Заголовок секции */
+.our-team-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 40px;
+}
+
+/* Стили для карточек команды */
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 380px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
+}
+
+.team-card img {
+    width: 264px;
+    height: 260px;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+}
+
+/* Контент внутри карточек */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 232px;
+    height: 56px;
+}
+
+.team-member-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.team-member-role {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+
+
+
+
+
+
+
+
+
+/* Our Portfolio Section */
+/* .fourth-section .our-portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-list img {
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2e2f42;
+    margin-top: 15px;
+}
+
+.item-description {
+    font-size: 16px;
+    color: #434455;
+} */
+
+/* Portfolio Section */
+/* Our Portfolio */
+
+
+/* Основной стиль секции */
+.portfolio {
+    width: 1128px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 50px;
+}
+
+/* Стили для рядов */
+.portfolio-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Стили карточек проектов */
+.project-card {
+    width: 360px;
+    height: 420px;
+    background-color: #fff;
+    border: 1px solid #e7e9fc;
+}
+
+.project-card img {
+    width: 360px;
+    height: 300px;
+    background-size: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    height: 120px;
+}
+
+.card-content h3 {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
-.team-member-role {
+.card-content p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
 
-.footer {
-    background-color: #2e2f42;
-    text-align: center;
+
+/* Footer styles */
+.site-footer {
+    background-color: #2d2d2d; /* Цвет фона футера по макету */
+    padding: 40px 0;/* Верхний и нижний отступы футера */
+    color: #fff; /* Общий цвет текста для футера */
+}
+
+.footer-container {
+    width: 264px;/* Ширина контейнера с контентом */
+    Height: 112px;
+    /* margin: 0 auto; Центрирование контейнера  */
+    margin: 50px 50px;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: flex-start; /* Выровнять по левому краю */
 }
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    font-size: 24px;/* Размер логотипа */
+    line-height: 1.2;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
+    color: #4D5AE5;/* Цвет текста логотипа */
+    margin-bottom: 20px;/* Отступ между логотипом и параграфом */
 }
 
-.logo-highlight {
-    color: #f4f4fd;
+.footer-paragraph {
+    font-size: 16px;/* Размер текста параграфа */
+    color: #c0c0c0;/* Цвет текста параграфа */
+    margin: 0;
+    line-height: 1.5;/* Межстрочный интервал */
+}
+
+.studio-footer-class {
+    color: #ffffff;/* Цвет второй части логотипа */
 }
 
 .footer-description {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--footer-text-color, #F4F4FD);
-}
-
-.our-portfolio {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.item-description {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    color: #ffffff;
+    margin-top: 20px;
 }
 
-.portfolio-list {
-    list-style: none;
-}
 
-.portfolio-list li {
-    text-align: center;
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .team-list, .portfolio-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-item, .portfolio-list img {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    
 }
